@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body id="body">
+
+    <div id="nav_wrap">
+    </div>
+
+    <div id="slide">
+        <img id="img" src="">
+    </div>
+
+    <div id="suggetions"></div>
+
+    <div id="card_cont">
+    </div>
+
+    <div id="bot_4">
+    </div>
+
+    
+</body>
+
+</html>
+
+<script src="homepage.js"></script>
+<script type="module">
+    import nav from "../components/navbar.js"
+    import homecrd from "../components/homecrd.js"
+    import smallcrd from "../components/smallcrd.js"
+
+    let navdiv = document.getElementById("nav_wrap")
+    let cardcont = document.getElementById("card_cont")
+    let bot_4 = document.getElementById("bot_4")
+    // let img2 = document.getElementsByTagName("img")
+    // console.log(img2)
+    navdiv.innerHTML = nav()
+    card_cont.innerHTML = homecrd()
+    bot_4.innerHTML = smallcrd()
+    let arr = []
+
+
+</script>
