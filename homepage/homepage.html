@@ -18,7 +18,20 @@
         <img id="img" src="">
     </div>
 
-    <div id="suggetions"></div>
+    <h1 class="head_sug">GOTTA HAVE IT</h1>
+    <div class="h2s">
+        <h4>NEW</h4>
+        <h4>MINIS</h4>
+        <h4>TARA'S FAVORITES</h4>
+    </div>
+    <div class="suggetions_outer">
+        <button id="left"><</button>
+        <div id="suggetions">
+    
+        </div>
+        <button id="right">></button>
+
+    </div>
 
     <div id="card_cont">
     </div>
@@ -31,21 +44,24 @@
 
 </html>
 
-<script src="homepage.js"></script>
 <script type="module">
     import nav from "../components/navbar.js"
     import homecrd from "../components/homecrd.js"
     import smallcrd from "../components/smallcrd.js"
-
+    
     let navdiv = document.getElementById("nav_wrap")
     let cardcont = document.getElementById("card_cont")
     let bot_4 = document.getElementById("bot_4")
-    // let img2 = document.getElementsByTagName("img")
-    // console.log(img2)
     navdiv.innerHTML = nav()
     card_cont.innerHTML = homecrd()
     bot_4.innerHTML = smallcrd()
     let arr = []
-
-
+    let ham = document.getElementById("hamburger")
+    ham.addEventListener("click",hii)
+    let ul = document.getElementById("nav_ul")
+     function hii(){
+        console.log(ul)
+        ul.style.marginLeft=0;
+    }
 </script>
+<script src="homepage.js"></script>
