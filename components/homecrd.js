@@ -1,48 +1,53 @@
 const homecrd=()=>{
     return ` <div class="big_card">
+    
+    <div class="right_img one">
+        <img src="../bobbiebrown/bobbie3.png" alt="">
+    </div>
     <div class="right_txt">
-        <h1>GO ALL IN ON SKIN</h1>
+        <p>Spring Forward Savings Event</p>
+        <h1>  Up To $40 Off<br>
+        Complexion<br>
+        Essentials </h1>
         <p style="font-size:17px; line-height:30px;">
-            With Skin Long-Wear Weightless Foundation SPF 15,<br> a 16-hour lasting, lightweight foundation with matte coverage<br> that is sweat and humidity-resistant and feels like skin.<br>
-            Starts at Rs. 1,990
+        Upgrade your makeup bag with our undertone-correct formulas.
             
             </p>
         <button>Shop Now</button>
-    </div>
-    <div class="right_img">
-        <img src="../bobbiebrown/bobbie3.png" alt="">
     </div>
 </div>
 
 <div class="big_card">
     <div class="right_txt">
-        <h1>OUR #1 ALL-IN-ONE
-            MOISTURIZER &
-            PRIMER</h1>
+        <p>BOBBIE BROWN X FLORACRACY</p>
+        <h1>TIME TO BLOOM</h1>
             <p style="font-size:17px; line-height:30px; ">
-                Vitamin Enriched Face Base primes, plumps and nourishes skin for<br> smooth makeup application. Starts at Rs. 990.
-                <br>
-                1 Vitamin Enriched Face Base is sold every 24 seconds Globally*
+            Spring for fresh beauty. Shop <span class="bold">Skin Long-Wear<br>
+            Weightless Foundation SPF 15</span> and get 20% off<br>
+            your first Floracracy bouquet, now through March 4th.
                 </p>
         <button>shop now</button>
     </div>
-    <div class="right_img">
+    <div class="right_img two">
         <img src="../bobbiebrown/bobbie2.png">
        
     </div>
 </div>
 
 <div class="big_card">
+  
+    <div class="right_img one"><img src="../bobbiebrown/bobbie.png" alt=""></div>
     <div class="right_txt">
-        <h1>CRUSH AT
-            FIRST SWIPE</h1>
-            <p style="font-size:17px; line-height:30px;">
-                Treat your lips to the lived-in look of a lipstick<br> with the hydrating feel of a balm.<br>
-                Starts at Rs. 1,250
-                </p>
-        <button>Shop Now</button>
-    </div>
-    <div class="right_img"><img src="../bobbiebrown/bobbie.png" alt=""></div>
+    <h1>EVERY EYE<br> ANY LOOK</h1>
+        <p style="font-size:17px; line-height:30px;">
+        Tap the QR code to explore our <span class="bold">NEW Virtual Look Finder</span> and browse<br>
+        our most popular eye tutorials—all tailored to your unique eye shape.
+            </p>
+            <div class="qr_div">
+   <img class="qr" src="../bobbiebrown/qrcode.png"> <button id="qrbtn">Shop Now</button>
+            
+            </div>
+</div>
 </div>
 
 <div class="big_card2">

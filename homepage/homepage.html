@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/397d87438b.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <link rel="stylesheet" href="homepage.css">
 </head>
@@ -27,7 +28,7 @@
     <div class="suggetions_outer">
         <button id="left"><</button>
         <div id="suggetions">
-    
+            
         </div>
         <button id="right">></button>
 
@@ -35,10 +36,53 @@
 
     <div id="card_cont">
     </div>
+    <div class="learnfrm_pro">
+        <div class="top_pro">
+        <h4>VIRTUAL ARTISTY CONSULTATION</h4>
+        <h1>LEARN FROM THE PROS</h1>
+        <h4> From trying a new shade to learning new tips, our artists<br>
+            are here to help with complimentary video sessions.</h4>
+        </div>
+        <dv id="pro_slide"></dv>
+    </div>
+
+    <div class="learnfrm_pro">
+        <div class="top_pro">
+            <h1>#BOBBIEBROWN COMMUNITY</h1>
+            <h3>Looking fresh-faced? Let's see it. Mention @bobbibrown and tag #BobbiBrown to share.</h3>
+        </div>
+        <div id="gallery">
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="outer_mod">
+                <div class="mod_img">  
+                 <img class="modal-content" id="img01" >
+                </div>
+                <div style="position: relative;">
+                    <div class="modal_pro">
+                        <img src="https://www.pinclipart.com/picdir/middle/25-259252_special-school-nurse-person-placeholder-image-png-clipart.png">
+                        <div>
+                            <p>Loremipsum dolor. </p>
+                            <p>Loremipsum dolor. </p>
+                        </div>
+                        <span class="close">&times;</span>
+                        
+                    </div>
+                    <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium velit similique quia, enim error fuga incidunt, iusto excepturi eius illo dignissimos sequi assumenda aliquid laudantium, exercitationem nemo dolorem provident consequatur.</div>
+                </div>
+         
+            </div>
+          </div>
+
+
+        <button class="btn_black">SHARE YOUR LOOK</button>
+        <h4 style="text-decoration: underline;">VIEW GALLERY</h4>
+    </div>
 
     <div id="bot_4">
     </div>
-
+    <div id="imp_footer"></div>
     
 </body>
 
@@ -48,10 +92,31 @@
     import nav from "../components/navbar.js"
     import homecrd from "../components/homecrd.js"
     import smallcrd from "../components/smallcrd.js"
-    
+    import {prodata,gallerydata} from "./homepagedata.js"
+    import footer from "../components/footer.js"
+
+    let body = document.getElementById("body")
     let navdiv = document.getElementById("nav_wrap")
     let cardcont = document.getElementById("card_cont")
     let bot_4 = document.getElementById("bot_4")
+    let pro_slide = document.getElementById("pro_slide")
+    let gallery = document.getElementById("gallery")
+    let footer1 = document.getElementById("imp_footer")
+    var modal = document.getElementById("myModal");
+     var modalImg = document.getElementById("img01");
+     var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() { 
+    modal.style.display = "none";
+    body.style.overflow = "auto"
+    }
+    modal.onclick = function() {
+    modal.style.display = "none";
+    body.style.overflow = "auto"
+
+    }
+    
+
+    footer1.innerHTML = footer()
     navdiv.innerHTML = nav()
     card_cont.innerHTML = homecrd()
     bot_4.innerHTML = smallcrd()
@@ -63,5 +128,53 @@
         console.log(ul)
         ul.style.marginLeft=0;
     }
+
+    function createSLide(data){
+    let div = document.createElement("div")
+    let img = document.createElement("img")
+    let p = document.createElement("p")
+    let h1 = document.createElement("h1")
+    let p2 = document.createElement("p2")
+    let button = document.createElement("button")
+    img.src = data.img
+    p.innerText = data.time
+    h1.innerText = data.name
+    p2.innerText = data.desc
+    button.innerText = "BOOK NOW"
+    div.append(img,p,h1,p2,button)
+    pro_slide.append(div)
+    }
+
+    function createGal(data){
+        let div = document.createElement("div")
+        let img = document.createElement("img")
+        let div2 = document.createElement("div")
+        let button = document.createElement("button")
+        button.innerText="Shop Now"
+        button.setAttribute("class","button_white")
+        div2.append(button)
+        div2.setAttribute("class","overlay")
+        img.src = data
+        div.append(img,div2)
+        
+        button.onclick = function(){
+            modal.style.display = "flex";
+            modal.style.alignItems = "center"
+            modal.style.justifyContent = "center"
+            modalImg.src = data;
+            console.log(data)
+            
+            body.style.overflow = "hidden"
+        }
+        gallery.append(div)
+    }
+
+
+prodata.map(elem=>createSLide(elem))
+
+gallerydata.map(elem=>createGal(elem.img))
+    
+
+
 </script>
-<script src="homepage.js"></script>
+<script  src="homepage.js"></script>
