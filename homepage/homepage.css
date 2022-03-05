@@ -499,7 +499,7 @@ li:hover{
 }
 #footer{
    background-color: black;
-   min-width: 100%;
+
 }
 #footer2{
     display: flex;
@@ -512,8 +512,15 @@ li:hover{
 #footer1{
    background-color: black;
    display: flex;
+   flex-wrap: wrap;
    margin: 0;
    padding: 0;
+}
+#footer1>div{
+   width: 100%;
+   max-width: 400px;
+   justify-content: center;
+   /* align-items: center; */
 }
 #footer p{
    color: white;
@@ -535,7 +542,63 @@ li:hover{
 #third1>p{
  color:#cecece;
 }
-
+.footer_email{
+ display:flex;
+ flex-direction:column;
+ color:white;
+}
+.footer_email>input {
+ background-color:black;
+ border:1px solid white;
+ color:white;
+ width:60%;
+ height:40px;
+ margin-bottom:20px;
+}
+.footer_email>input::placeholder {
+ color:white;
+ 
+}
+.footer_email>button{
+background-color:black;
+ border:1px solid white;
+ color:white;
+ height: 40px;
+ width:100px;
+}
+.footer_selec{
+background-color: black;
+color:white;
+border:2px solid white;
+width: 60%;
+padding:10px 20px;
+font-size:15px;
+}
+.socials{
+width:60%;
+font-size:30px;
+display: flex;
+justify-content:space-between;
+}
+@media  screen and (max-width:900px){
+#footer1{
+    /* align-items: center;
+    justify-content:center; */
+}
+.footer_email{
+    padding-left: 50px;
+}
+.footer_email>input{
+    width: 100%;
+}
+#footer2{
+    flex-direction: column;
+    text-align: center;
+}
+#first1{
+    margin-right: 0;
+}
+}
 /* Modal */
 /* #myImg {
     border-radius: 5px;

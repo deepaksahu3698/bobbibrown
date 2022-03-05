@@ -25,7 +25,7 @@ setInterval(() => {
     }else{
         pro_slide.scrollLeft+=470
     }
-}, 5000);
+}, 3000);
 
 setInterval(() => {
     if(gallery.scrollLeft>=2000){
@@ -33,7 +33,7 @@ setInterval(() => {
     }else{
         gallery.scrollLeft+=350
     }
-}, 5000);
+}, 3000);
 
 
 // hamburger.onclick = function(){

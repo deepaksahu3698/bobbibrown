@@ -31,7 +31,7 @@ const prodata = [
         time:"15 min"
     },
     {
-        img:"../bobbiebrown/pro6.png",
+        img:"../bobbiebrown/pro8.png",
         name:"EFFORTLESS EYES",
         desc:" Learn how to fill, define, and enhance your natural shape for an effortlessly polished look.",
         time:"15 min"
@@ -43,7 +43,7 @@ const prodata = [
         time:"15 min"
     },
     {
-        img:"../bobbiebrown/pro8.png",
+        img:"../bobbiebrown/pro6.png",
         name:"FIND YOUR FOUNDATION",
         desc:" Learn how to fill, define, and enhance your natural shape for an effortlessly polished look.",
         time:"15 min"

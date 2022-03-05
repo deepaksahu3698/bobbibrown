@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+    <div id="nav_wrap">
+    </div>
+    <div class="top_show">
+        <img src = "../newPage/newPage.png">
+    </div>
+    <div id="first_row">
+        <div id="ad">
+            <img style="height:100%;" src = "../newPage/off.png">
+        </div>
+    </div>
+    <div id="second_row">
+
+    </div>
+    <div id="3rd_row"></div>
+</div>
+</body>
+</html>
+<script type="module">
+    import {first,second} from "./pagesData.js"
+    let fDiv = document.getElementById("first_row")
+    let sDiv = document.getElementById("second_row")
+
+    first.map((elem)=>create(elem,fDiv))
+    second.map((elem)=>create(elem,sDiv))
+
+    function create(data,id){
+        let div= document.createElement("div")
+        let img = document.createElement("img")
+        img.src = data.image_link
+        if(data.image_link2){
+            img.addEventListener("mouseenter",function(){
+                img.src = data.image_link2
+            })
+            img.addEventListener("mouseleave",function(){
+                img.src = data.image_link
+            })
+        }
+        img.style.transition = "opacity 3s ease-out";
+        let h3 = document.createElement("h3")
+        h3.innerText = data.brand
+        let h2 = document.createElement("h2")
+        h2.innerText = data.name
+        let p = document.createElement("p")
+        if(data.description.length >=30){
+            p.innerText = data.description.substring(0,30)+"..."
+        }else{
+            p.innerText = data.description
+        }
+        let p2 = document.createElement("p")
+        p2.innerText = data.price
+        let button = document.createElement("button")
+        button.innerText = "ADD TO BAG"
+
+        div.append(img,h3,h2,p,p2,button)
+        id.append(div)
+    }
+</script>
