@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a96e0bd0bf.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        #first{
+            padding: 45px;
+        }
+        #second{
+            padding: 45px;
+
+        }
+        #footer{
+           background-color: black;
+
+        }
+        #footer2{
+            display: flex;
+            padding:45px;
+
+        }
+        #first1{
+            margin-right: 350px;
+        }
+       #footer1{
+           background-color: black;
+           display: flex;
+           flex-wrap: wrap;
+           margin: 0;
+           padding: 0;
+       }
+       #footer1>div{
+           width: 100%;
+           max-width: 400px;
+           justify-content: center;
+           /* align-items: center; */
+       }
+       #footer p{
+           color: white;
+           padding: 0;
+           margin: 5px;
+       }
+       #footer h4{
+           color: white;
+           padding: 0;
+           margin: 5px;
+           padding-bottom:10px;
+       }
+     #first1>p{
+         color:#cecece;
+     }
+     #second1>p{
+         color:#cecece;
+     }
+     #third1>p{
+         color:#cecece;
+     }
+     .footer_email{
+         display:flex;
+         flex-direction:column;
+         color:white;
+     }
+     .footer_email>input {
+         background-color:black;
+         border:1px solid white;
+         color:white;
+         width:60%;
+         height:40px;
+         margin-bottom:20px;
+     }
+     .footer_email>input::placeholder {
+         color:white;
+         
+     }
+    .footer_email>button{
+        background-color:black;
+         border:1px solid white;
+         color:white;
+         height: 40px;
+         width:100px;
+    }
+    .footer_selec{
+        background-color: black;
+        color:white;
+        border:2px solid white;
+        width: 60%;
+        padding:10px 20px;
+        font-size:15px;
+    }
+    .socials{
+        width:60%;
+        font-size:30px;
+        display: flex;
+        justify-content:space-between;
+    }
+    @media  screen and (max-width:900px){
+        #footer1{
+            /* align-items: center;
+            justify-content:center; */
+        }
+        .footer_email{
+            padding-left: 50px;
+        }
+        .footer_email>input{
+            width: 100%;
+        }
+        #footer2{
+            flex-direction: column;
+            text-align: center;
+        }
+        #first1{
+            margin-right: 0;
+        }
+    }
+
+    </style>
+</head>
+<body>
+    <div id="footer">
+    <div id="footer1">
+        <div id="first">
+            <h4>NEED HELP?</h4>
+            <p>Chat with an Artist</p>
+            <p>Text An Artist</p>
+            <p>Call Us (877)-310-9222</p>
+            <p>Shipping & Returns</p>
+            <p>FAQS</p>
+            <p>Careers</p>
+            <select class="footer_selec">
+                <option>CHOOSE LOCATION</option>
+                <option value="">ARGENTINA</option>
+                <option value="">AUSTRALIA</option>
+                <option value="">AMERICA</option>
+                <option value="">CANADA</option>
+                <option value="">CHILE</option>
+                <option value="">MAINLAND CHINA</option>
+                <option value="">FRANCE</option>
+                <option value="">GERMANY</option>
+                <option value="">GREECE</option>
+                <option value="">ISRAEL</option>
+            </select>
+            
+        </div>
+        <div id="second">
+            <h4>MY BOBBI BROWN</h4>
+            <p>BB Access</p>
+            <p>My Account</p>
+            <p>My Orders</p>
+            <p>Store Locator</p>
+        </div>
+        <div class="footer_email">
+            <input placeholder="ENTER YOUR EMAIL" type="text">
+            <input placeholder="ENTER YOUR PHONE">
+            <button>SUBMIT</button>
+            <h3>FOLLOW US</h3>
+            <div class="socials">
+                <i style="color: white;fontSize:30px" class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram-square"></i>
+                <i class="fa-brands fa-pinterest"></i>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="footer2">
+        <div id="first1">
+<p>© Bobbi Brown Professional Cosmetics, Inc. All worldwide rights reserved.</p>
+</div>
+<div id="second1">
+    <p>Terms & Conditions</p>
+    <p>California Do Not Sell My <br> Personal Information</p>
+    <p>Accessibility</p>
+</div>    
+<div id="third1">
+    <p>
+        Interest based ads
+    </p>
+    <p>Privacy Policy</p>
+</div>
+</div>
+<div id="footer3"></div>
+</div>
+</body>
+</html>

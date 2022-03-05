@@ -1,0 +1,29 @@
+body{
+    padding:0;
+    margin:0;
+    width: 100%;
+}
+
+.top_show{
+    /* width: 100vw; */
+}
+.top_show>img{
+    width: 100%;
+}
+
+#first_row , #second_row {
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction:row-reverse;
+    text-align:center;
+}
+
+#first_row>div>img , #first_row>div>img {
+    height:450px;
+}
+#ad{
+    height:100vh;
+}
+#ad>img{
+    height:100%;
+}
