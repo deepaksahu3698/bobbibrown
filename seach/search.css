@@ -1,0 +1,206 @@
+#cont{
+    /* align-items: center; */
+    margin: auto;
+    height: 850px;
+    width: 85%;
+    /* border: 1px solid orange; */
+    /* align-items: center; */
+    justify-content: center;
+}
+#searchbar{
+    display: flex;
+    align-items: center;
+    /* margin: auto; */
+}
+#div-input{
+    /* margin: 0px auto ; */
+    margin-left: 300px;
+    height: 30px;
+    align-items: center;
+    width: 50%;
+    /* border: 1px solid red; */
+}
+#inp{
+    height: 30px;
+    width: 99%;
+    text-decoration: none;
+    overflow: none;
+    /* border-radius: 10px; */
+    outline: none;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    /* border: 1px solid black; */
+    
+}
+#div-submit{
+    height: 50px;
+    width: 7%;
+    /* border: 1px solid green; */
+    align-items: center;
+    /* margin: auto; */margin-top: 15px;
+}
+#sumbmit{
+    height: 42px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    margin:3px;
+    font-size: 15px;
+}
+#para >p{
+    /* width: 100%; */
+    margin-left:350px;
+  
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+    
+}
+.btn{
+    background-color: white;
+    outline: none;
+    border: hidden;
+    
+
+}
+#displayy{
+    /* border: 3px solid rgb(22, 102, 56); */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    height: 730px;
+    overflow-y: auto;
+    overflow-x:hidden ;
+    scroll-behavior: smooth;
+    stroke-opacity:unset;
+    scrollbar-width: none;
+    align-items: center;
+/* background-image: url("https://miro.medium.com/max/800/0*a8__BlPyJgnS0bXa.jpg"); */
+/* opacity: -1; */
+/* opacity: 0.78; */
+}
+/* #productcad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+#displayy::-webkit-scrollbar{
+    height: 0;
+}
+#displayy>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    justify-content: center;
+    /* padding: 10px; */
+    /* border:1px solid #a79a9a; */
+    height: 350px;
+    /* overflow: hidden; */
+    /* background-color: #f8efef; */
+  
+
+}
+
+img{
+    width: 170px;
+    height: 170px;
+    opacity: 1;
+    margin: 5px;
+    background-color: white;
+outline: none;
+    
+}
+img:hover{
+    transform: scale(1.5);
+  
+}
+#colorcont{
+    /* display: inline-flex; */
+    display:flex;
+   
+    /* grid-template-columns: repeat(5,1fr); */
+    /* flex-direction: row; */
+    /* border: 1px solid royalblue; */
+    height: 40px;
+    width: 175px;
+    justify-content: center;
+    /* overflow-x: scroll; */
+  
+  
+   
+}
+
+#color_dis{
+    display: flex;
+    width: 150px;
+    /* margin: auto; */
+    /* float: left; */
+    /* overflow: visible; */
+    height: auto;
+    text-align: center;
+    margin: 5px;
+    flex-direction: row;
+}
+#a_color{
+    /* border: 1px solid #ffffff; */
+    box-shadow: #000000 0 0 1px 1px;
+    border-radius: 50%;
+  
+    display: block;
+    width: 23px;
+    height: 23px;
+}
+
+#outer{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 30%;
+    /* justify-content: center; */
+    /* border: 1px solid red; */
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+   
+}
+#outer::-webkit-scrollbar{
+    height: 0;
+}
+#scrool_btn{
+    display: flex;
+    flex-direction: row;
+    margin-right: -410px;
+    width: 175%;
+    margin-top: 5px;
+}
+#productcad h3{
+    color: #1b1b1b;
+    font-family: "BBText Bold",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    width: 100%;
+    margin:5px ;
+}
+#productcad p{
+    color: #1b1b1b;
+    font-family: "BBText Bold",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    margin: 0;
+}
+#cart_btn{
+    background-color: black;
+    color: white;
+    height: 62px;
+    margin: 5px;
+    outline: none;
+    border: none;
+    width: 141px;
+    font-family: sans-serif;
+    font-weight: bold;
+    height: 33px;
+
+}

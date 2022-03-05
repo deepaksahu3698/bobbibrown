@@ -1,0 +1,72 @@
+#cont{
+    width: 90%;
+    margin: 20px 50px;
+    border: 1px solid black;
+    height: 850px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+#shopping{
+    width: 46%;
+    height:660px;
+    border: 1px solid rgb(24,89, 56);
+   
+}
+#shopping img{
+    height: 94px;
+    border: 1px solid hotpink;
+    width: 95%;
+    margin: 10px;
+
+}
+#offercode{
+    height: 660px;
+    width: 36%;
+    border: 1px solid rosybrown;
+}
+.font{
+    color: #1b1b1b;
+    font-family: "BBText Bold",Helvetica,Arial,sans-serif;
+}
+#shopping_tag{
+    line-height: 1;
+    font-size: 25px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    font-family: "BBText Bold",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    margin: 20px 10px 10px ;
+}
+hr{
+    height: 2px;
+    outline: none;
+    margin: 0px;
+    font-size: 20px;
+    /* width: 5px; */
+    background: black
+}
+#p1{margin-top: 0px;
+     background-color: #cecece;
+     
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-family: "BBText Bold",Helvetica,Arial,sans-serif;
+}
+
+#p2{
+    font-family: "BBText Bold",Helvetica,Arial,sans-serif;
+    text-align: justify;
+    margin-top: 20px;
+   font-size: 15px;
+   font-weight: bold;
+   width: 80%;
+    
+}
+
+
